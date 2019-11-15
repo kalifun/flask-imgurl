@@ -1,2 +1,2 @@
 # flask-imgurl
-flask编写的图传网站，及教程。
+[第一个flask应用](L01/README.md)
