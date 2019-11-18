@@ -52,7 +52,7 @@ class Setting:
 
 Model.py
 
-```
+```python
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from imgurl.Utils.avatar.initavatar import get_pic
@@ -125,7 +125,7 @@ class Pictures(db.Model):
 
 Initavatar.py
 
-```
+```python
 import random
 import hashlib
 
