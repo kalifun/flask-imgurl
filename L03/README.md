@@ -139,6 +139,26 @@ def get_pic(size=256):
     return url
 ```
 
+Initapp.py
+
+```python
+from flask import  Flask
+from imgurl.Models.model import db
+from imgurl.Config.setting import Setting
+
+def CreateApp():
+    # 创建应用
+    app = Flask(__name__)
+    # app.config来自于self.make_config()
+    # app.config.from_object(Setting)，其实就是对默认配置的修改和添加
+    app.config.from_object(Setting)
+    # 将数据模型注册到这个app上
+    db.init_app(app)
+    return app
+```
+
+
+
 ## 总结
 
 我们需要将模型设置好，到后期我们需要对数据库操作就变得便利了。
